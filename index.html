@@ -1,40 +1,101 @@
+
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chintan Foundation</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chintan Foundation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f4f8;
+    }
+    header {
+      background-color: #3498db;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+    header img {
+      height: 50px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ffeb3b;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .projects img, .members img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>চিন্তন ফাউন্ডেশন</h1>
-        <nav>
-            <ul>
-                <li><a href="#">হোম</a></li>
-                <li><a href="#">আমাদের সম্পর্কে</a></li>
-                <li><a href="#">কার্যক্রম</a></li>
-                <li><a href="#">যোগাযোগ</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="intro">
-            <h2>আমাদের উদ্দেশ্য</h2>
-            <p>চিন্তন ফাউন্ডেশন একটি অলাভজনক সংগঠন, যা সমাজ উন্নয়নের জন্য কাজ করে।</p>
-        </section>
-        <section class="activities">
-            <h2>আমাদের কার্যক্রম</h2>
-            <ul>
-                <li>শিক্ষা সহায়তা</li>
-                <li>স্বাস্থ্য সচেতনতা</li>
-                <li>পরিবেশ রক্ষা</li>
-                <li>নারী ক্ষমতায়ন</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; ২০২৫ চিন্তন ফাউন্ডেশন</p>
-    </footer>
+  <header>
+    <img src="logo.png" alt="Chintan Logo" />
+    <nav>
+      <ul>
+        <li><a href="#projects">প্রকল্প</a></li>
+        <li><a href="#members">সদস্য</a></li>
+        <li><a href="#contact">যোগাযোগ</a></li>
+        <li><a href="form.html">ফর্ম</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="projects">
+    <h2>আমাদের প্রকল্পসমূহ</h2>
+    <div class="projects">
+      <img src="project1.jpg" alt="Project 1" />
+      <img src="project2.jpg" alt="Project 2" />
+      <img src="project3.jpg" alt="Project 3" />
+    </div>
+  </section>
+
+  <section id="members">
+    <h2>আমাদের সদস্য</h2>
+    <div class="members">
+      <img src="member1.jpg" alt="Member 1" />
+      <img src="member2.jpg" alt="Member 2" />
+      <img src="member3.jpg" alt="Member 3" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>যোগাযোগ</h2>
+    <p>ঠিকানা: গ্রাম - উদাহরণ, পোস্ট - উদাহরণ, জেলা - উদাহরণ</p>
+    <p>মোবাইল: ০১২৩৪৫৬৭৮৯০</p>
+    <p>ইমেইল: info@chintan.org</p>
+  </section>
+
+  <footer>
+    © 2025 Chintan Foundation
+  </footer>
 </body>
 </html>
